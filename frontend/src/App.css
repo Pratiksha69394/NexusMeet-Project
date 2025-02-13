@@ -1,0 +1,457 @@
+
+/* Landing Page */
+
+.landingPageContainer {
+    width: 100vw;
+    height: 100vh;
+    background: url('/public/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.landingPageContainer nav{
+    padding-inline: 1.2rem;
+    padding-block: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(22, 26, 30, 0.5); */
+}
+
+.landingPageContainer nav h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-block: 0;
+    color: #fff(222, 100%, 56%);
+    padding-left: 1.6rem;
+  
+}
+
+.landingPageContainer nav .navlist {
+    display: flex;
+    gap: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 1.6rem;
+    font-weight: 700;
+}
+
+.landingPageContainer nav .navlist p{
+    color: hsl(222, 100%, 56%);
+}
+
+.landingPageContainer nav .navlist button {
+    background: hsl(222, 100%, 56%);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 0.4rem;
+    padding-inline: 1.6rem;
+    padding-block: 0.5rem;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.landingPageContainer nav .navlist button:hover {
+    background: hsl(222, 100%, 40%);
+    color: #fff;
+}
+
+.landingPageContainer nav .navlist p:hover {
+    font-size: larger;
+  }
+
+
+.landingMainContainer {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 6rem;
+    padding-block: 8rem;
+}
+
+.landingMainContainer .landingMainContent h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-block: 0;
+    color: hsl(222, 100%, 56%);
+    text-shadow: #fff 0.2rem 0.2rem 0.2rem;
+}
+
+.landingMainContainer .landingMainContent p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-block: 1.6rem;
+    color: #fff;
+}
+
+.landingMainContainer .landingMainContent button{
+    padding-inline: 1.6rem;
+    padding-block: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: hsl(222, 100%, 56%);
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.landingMainContainer .landingMainContent button:hover{
+    background: hsl(222, 100%, 40%);
+}
+
+
+
+
+/* Home component  */
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 40px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navBar .username {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222;
+    margin-left: 5px;
+    margin-bottom: 2px;
+  }
+
+  .meetContainer {
+    display: flex;
+    padding-inline: 50px;
+    height: 80vh;
+    gap: 10vw;
+    justify-content: center;
+    
+  }
+  
+  .meetContainer h2{
+    margin-bottom: 25px;
+  }
+
+  .meetContainer h2 .nexusmeet {
+    color:hsl(222, 100%, 40%);
+    font-size: larger;
+  }
+  
+  .leftPanel {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .rightPanel {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightPanel > img {
+    width: 30vw;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+
+  .navBar .homeLogout{
+     padding-top: 11px;
+     padding-left: 25px;
+        padding-right: 25px;
+  }
+  
+
+  /* Responsive style of Landing Page */
+
+  @media (max-width: 963px) {
+    .landingPageContainer {
+      width: 100vw;
+      height: 100vh;
+    }
+
+
+    .landingMainContainer {
+      margin-top: 4rem;
+      padding-inline: 2rem;
+      padding-block: 4rem;
+    }
+  
+    .landingMainContainer .landingMainContent h1 {
+      font-size: 2rem;
+    }
+  
+    .landingMainContainer .landingMainContent p {
+      font-size: 1rem;
+    }
+  
+    .landingMainContainer .landingMainContent button {
+      font-size: 1.2rem;
+    }
+  
+    .landingPageContainer nav {
+      padding-inline: 1rem;
+      padding-block: 1rem;
+    }
+  
+    .landingPageContainer nav h2 {
+      font-size: 1.5rem;
+    }
+  
+    .landingPageContainer nav .navlist {
+      gap: 1rem;
+    }
+  
+    .landingPageContainer nav .navlist button {
+      font-size: 1rem;
+      padding-inline: 1rem;
+      padding-block: 0.4rem;
+    }
+  
+    .landingPageContainer nav .navlist p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 876px) {
+    .landingPageContainer {
+      width: 100vw;
+      height: 100vh;
+      background: url('/public/background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+    .landingMainContainer {
+      margin-top: 5.5rem;
+      padding-inline: 1rem;
+      padding-block: 2rem;
+    }
+  
+    .landingMainContainer .landingMainContent h1 {
+      font-size: 1.5rem;
+    }
+  
+    .landingMainContainer .landingMainContent p {
+      font-size: 0.8rem;
+    }
+  
+    .landingMainContainer .landingMainContent button {
+      font-size: 1rem;
+    }
+  }
+
+ @media (max-width: 587) {
+    .landingPageContainer {
+      width: 100vw;
+      height: 100vh;
+      background: url('/public/background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .landingMainContainer {
+      margin-top: 5.5rem;
+      padding-inline: 1rem;
+      padding-block: 2rem;
+    }
+
+    .landingMainContainer .landingMainContent h1 {
+      font-size: 1.5rem;
+    }
+
+    .landingMainContainer .landingMainContent p {
+      font-size: 0.8rem;
+    }
+
+    .landingMainContainer .landingMainContent button {
+      font-size: 1rem;
+    }
+
+    .landingPageContainer nav {
+      padding-inline: 1rem;
+      padding-block: 1rem;
+    }
+
+    .landingPageContainer nav h2 {
+      font-size: 1.5rem;
+    }
+
+    .landingPageContainer nav .navlist {
+      gap: 1rem;
+    }
+
+    .landingPageContainer nav .navlist button {
+      font-size: 1rem;
+      padding-inline: 1rem;
+      padding-block: 0.4rem;
+    }
+
+    .landingPageContainer nav .navlist p {
+      font-size: 1rem;
+    }
+   
+ }
+
+
+  /* Responsive style of Home component */
+
+  @media (max-width: 963px) {
+    .navBar {
+      padding-inline: 20px;
+    }
+  
+    .navBar .username {
+      font-size: 1rem;
+    }
+  
+    .meetContainer {
+      padding-inline: 20px;
+      gap: 5vw;
+    }
+  
+    .meetContainer h2 {
+      font-size: 1.5rem;
+    }
+  
+    .meetContainer h2 .nexusmeet {
+      font-size: 1.5rem;
+    }
+  
+    .rightPanel > img {
+      width: 30vw;
+      height: auto;
+      border-radius: 20px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  
+    .navBar .homeLogout {
+      padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  @media (max-width: 699px) {
+    .navBar {
+      padding-inline: 10px;
+    }
+  
+    .navBar .username {
+      font-size: 0.8rem;
+    }
+  
+    .meetContainer {
+      padding-inline: 10px;
+      gap: 5vw;
+    }
+  
+    .meetContainer h2 {
+      font-size: 1.2rem;
+    }
+  
+    .meetContainer h2 .nexusmeet {
+      font-size: 1.2rem;
+    }
+  
+    .rightPanel > img {
+      width: 30vw;
+      height: auto;
+      border-radius: 20px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  
+    .navBar .homeLogout {
+      padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+
+  @media (max-width: 587px) {
+    .navBar {
+      padding-inline: 10px;
+    }
+  
+    .navBar .username {
+      font-size: 0.8rem;
+    }
+  
+    .meetContainer {
+      padding-inline: 10px;
+      gap: 5vw;
+    }
+  
+    .meetContainer h2 {
+      font-size: 1.2rem;
+    }
+  
+    .meetContainer h2 .nexusmeet {
+      font-size: 1.2rem;
+    }
+  
+    .rightPanel > img {
+      width: 30vw;
+      height: auto;
+      border-radius: 20px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  
+    .navBar .homeLogout {
+      padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  @media (max-width: 376px) {
+    .navBar {
+      padding-inline: 10px;
+    }
+  
+    .navBar .username {
+      font-size: 0.8rem;
+    }
+  
+    .meetContainer {
+      padding-inline: 10px;
+      gap: 5vw;
+    }
+  
+    .meetContainer h2 {
+      font-size: 1.2rem;
+    }
+  
+    .meetContainer h2 .nexusmeet {
+      font-size: 1.2rem;
+    }
+  
+    .rightPanel > img {
+      width: 30vw;
+      height: auto;
+      border-radius: 20px;
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+  
+    .navBar .homeLogout {
+      padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
